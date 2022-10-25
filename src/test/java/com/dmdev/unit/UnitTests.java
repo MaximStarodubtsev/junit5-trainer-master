@@ -1,14 +1,8 @@
-package com.dmdev.integration;
+package com.dmdev.unit;
 
-import com.dmdev.dto.CreateUserDto;
 import com.dmdev.dto.UserDto;
-import com.dmdev.entity.Gender;
-import com.dmdev.entity.Role;
 import com.dmdev.entity.User;
 import com.dmdev.exception.ValidationException;
-import com.dmdev.mapper.CreateUserMapper;
-import com.dmdev.mapper.UserMapper;
-import com.dmdev.util.LocalDateFormatter;
 import com.dmdev.validator.Error;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -45,4 +39,5 @@ public class UnitTests {
         Assertions.assertEquals(validationException.getErrors().toArray()[0],
                 error);
     }
+
 }
